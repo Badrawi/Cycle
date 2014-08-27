@@ -30,7 +30,7 @@
     NSMutableArray *contentArray = [NSMutableArray arrayWithContentsOfFile:plistPath];
     
     
-    NewPListPath = @"/Users/Ragab/xCode Projects/TryvinTrial2/TryvinTrial2/CreatedList.plist" ;
+    NewPListPath = @"/Users/tryvin/Downloads/TryvinTrial2/TryvinTrial2/CreatedList.plist" ;
     
    [contentArray writeToFile:NewPListPath atomically:YES];
 }
