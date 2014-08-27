@@ -35,6 +35,19 @@
     
    // [self.navigationItem.backBarButtonItem setAccessibilityLabel:@"BackButton"] ;
     
+    
+    /*UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
+                                   initWithTitle: @"Back"
+                                   style:UIBarButtonItemStyleBordered
+                                   target:nil
+                                   action:nil];
+    [[self navigationItem] setBackBarButtonItem:backButton];
+    
+    self.navigationItem.backBarButtonItem.isAccessibilityElement = YES;
+    
+    self.navigationItem.backBarButtonItem.AccessibilityLabel = @"BackButton" ;
+    */
+    self.navigationItem.leftBarButtonItem.accessibilityLabel = @"BackButton";
     [self.Result setText:self.ResultHolder];
 }
 
@@ -44,6 +57,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+-(IBAction)OnClick_btnBack:(id)sender  {
+    [self.navigationController popViewControllerAnimated:YES];
+    //[self.navigationController pushViewController:self.navigationController.parentViewController animated:YES];
+}
 /*
  #pragma mark - Navigation
  

@@ -19,9 +19,9 @@
 @interface TryvinTrial2Tests : KIFTestCase
 
 
-- (void)CheckTest;
--(void)AddTest;
--(void)DeleteTest;
+- (void)CheckFor:(NSString *)Name;
+- (void)testAdd;
+- (void)testDelete;
 
 @end
 
@@ -42,63 +42,90 @@
 
 - (void)beforeAll
 {
-    self.CheckTest;
-    self.AddTest;
-    self.DeleteTest;
+    
+    NSLog(@"TEST STARTED !");
 }
 
 
-- (void)CheckTest
+- (void)testCheck
 {
-    
-    //[tester longPressViewWithAccessibilityLabel:@"Greeting" value:@"Hello" duration:2];
     [tester tapViewWithAccessibilityLabel:@"EntryTextField"];
-    [tester enterTextIntoCurrentFirstResponder:@"Ragab"];
+    
+    [tester clearTextFromAndThenEnterText:@"Ragab" intoViewWithAccessibilityLabel:@"EntryTextField"];
+    
     [tester waitForViewWithAccessibilityLabel:@"EntryTextField" value:@"Ragab" traits:UIAccessibilityTraitNone];
     
     [tester tapViewWithAccessibilityLabel:@"CheckButton"];
     [tester waitForViewWithAccessibilityLabel:@"Result"];
     [tester waitForViewWithAccessibilityLabel:@"Result" value:@"This person works at Tryvin." traits:UIAccessibilityTraitNone];
     
-
+    
     [tester tapViewWithAccessibilityLabel:@"BackButton"];
-    [tester waitForViewWithAccessibilityLabel:@"CheckButton"];
+    
     
     NSLog(@"done");
 }
 
-- (void)AddTest
+- (void)testAdd
 {
     
     //[tester longPressViewWithAccessibilityLabel:@"Greeting" value:@"Hello" duration:2];
     [tester tapViewWithAccessibilityLabel:@"EntryTextField"];
-    [tester enterTextIntoCurrentFirstResponder:@"Added sample for test"];
+    [tester clearTextFromAndThenEnterText:@"Added sample for test" intoViewWithAccessibilityLabel:@"EntryTextField"];
     [tester waitForViewWithAccessibilityLabel:@"EntryTextField" value:@"Added sample for test" traits:UIAccessibilityTraitNone];
     
     [tester tapViewWithAccessibilityLabel:@"AddButton"];
     
     [tester tapViewWithAccessibilityLabel:@"EntryTextField"];
-    [tester enterTextIntoCurrentFirstResponder:@"Added sample for test"];
+    [tester clearTextFromAndThenEnterText:@"Added sample for test" intoViewWithAccessibilityLabel:@"EntryTextField"];
+    //[tester enterTextIntoCurrentFirstResponder:@"Added sample for test"];
     [tester waitForViewWithAccessibilityLabel:@"EntryTextField" value:@"Added sample for test" traits:UIAccessibilityTraitNone];
     
     [tester tapViewWithAccessibilityLabel:@"CheckButton"];
     [tester waitForViewWithAccessibilityLabel:@"Result"];
     [tester waitForViewWithAccessibilityLabel:@"Result" value:@"This person works at Tryvin." traits:UIAccessibilityTraitNone];
     
-
+    [tester tapViewWithAccessibilityLabel:@"BackButton"];
+    
+    
 }
 
-- (void)DeleteTest
+- (void)testDelete
 {
     
-    //[tester longPressViewWithAccessibilityLabel:@"Greeting" value:@"Hello" duration:2];
     [tester tapViewWithAccessibilityLabel:@"EntryTextField"];
-    [tester enterTextIntoCurrentFirstResponder:@"Ragab"];
+    [tester clearTextFromAndThenEnterText:@"Ragab" intoViewWithAccessibilityLabel:@"EntryTextField"];
     [tester waitForViewWithAccessibilityLabel:@"EntryTextField" value:@"Ragab" traits:UIAccessibilityTraitNone];
-    
     [tester tapViewWithAccessibilityLabel:@"DeleteButton"];
     
-    self.CheckTest;
+    
+    [tester tapViewWithAccessibilityLabel:@"EntryTextField"];
+    [tester clearTextFromAndThenEnterText:@"Ragab" intoViewWithAccessibilityLabel:@"EntryTextField"];
+    [tester waitForViewWithAccessibilityLabel:@"EntryTextField" value:@"Ragab" traits:UIAccessibilityTraitNone];
+    [tester tapViewWithAccessibilityLabel:@"CheckButton"];
+    [tester waitForViewWithAccessibilityLabel:@"Result"];
+    [tester waitForViewWithAccessibilityLabel:@"Result" value:@"This person is an intruder." traits:UIAccessibilityTraitNone];
+    [tester tapViewWithAccessibilityLabel:@"BackButton"];
+    
+}
+
+
+- (void)CheckFor:(NSString *)Name
+{
+    
+    [tester tapViewWithAccessibilityLabel:@"EntryTextField"];
+    
+    [tester clearTextFromAndThenEnterText:Name intoViewWithAccessibilityLabel:@"EntryTextField"];
+    
+    [tester waitForViewWithAccessibilityLabel:@"EntryTextField" value:Name traits:UIAccessibilityTraitNone];
+    
+    [tester tapViewWithAccessibilityLabel:@"CheckButton"];
+    [tester waitForViewWithAccessibilityLabel:@"Result"];
+    [tester waitForViewWithAccessibilityLabel:@"Result" value:@"This person works at Tryvin." traits:UIAccessibilityTraitNone];
+    
+    
+    [tester tapViewWithAccessibilityLabel:@"BackButton"];
+    
 }
 
 

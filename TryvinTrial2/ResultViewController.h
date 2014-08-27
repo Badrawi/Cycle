@@ -17,5 +17,6 @@
 
 @property (nonatomic,retain) IBOutlet UITextView * Result;
 @property (nonatomic,retain) NSString *ResultHolder;
+@property (nonatomic,retain) IBOutlet UIBarButtonItem *bar;
 
 @end
