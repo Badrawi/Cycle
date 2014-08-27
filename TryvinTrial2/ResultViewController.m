@@ -33,7 +33,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-   // [self.navigationItem.backBarButtonItem setAccessibilityLabel:@"BackButton"] ;
+    UIBarButtonItem *btnBack = [[UIBarButtonItem alloc]
+                                initWithTitle:@"Back"
+                                style:UIBarButtonItemStyleBordered
+                                target:self
+                                action:@selector(OnClick_btnBack:)];
+    self.navigationItem.leftBarButtonItem = btnBack;
     
     
     /*UIBarButtonItem *backButton = [[UIBarButtonItem alloc]
