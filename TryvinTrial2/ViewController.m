@@ -3,7 +3,7 @@
 //  TestingKIF
 //
 //  Created by Youssef Hatem on 8/25/14.
-//  Copyright (c) 2014 Tryvin. All rights reserved.
+//  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
 //
 
 #import "ViewController.h"
@@ -29,9 +29,55 @@
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"TestPList" ofType:@"plist"];
     NSMutableArray *contentArray = [NSMutableArray arrayWithContentsOfFile:plistPath];
     
+    //////////////////
     
-    NewPListPath = @"/Users/Ragab/xCode Projects/TryvinTrial2/TryvinTrial2/CreatedList.plist" ;
     
+    NewPListPath = @"/CreatedList.plist" ;
+    
+    
+    //NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NewPListPath = [documentsDirectory stringByAppendingPathComponent:@"/CreatedList.plist"];
+    
+   /* if ([fileManager fileExistsAtPath:txtPath] == NO) {
+        NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"txtFile" ofType:@"txt"];
+        [fileManager copyItemAtPath:resourcePath toPath:txtPath error:&error];
+    }*/
+    
+    
+    
+    /*
+     
+     
+     Copies txtFile from resource to document if not already present.
+     
+     NSFileManager *fileManager = [NSFileManager defaultManager];
+     NSError *error;
+     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+     NSString *documentsDirectory = [paths objectAtIndex:0];
+     
+     NSString *txtPath = [documentsDirectory stringByAppendingPathComponent:@"txtFile.txt"];
+     
+     if ([fileManager fileExistsAtPath:txtPath] == NO) {
+     NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"txtFile" ofType:@"txt"];
+     [fileManager copyItemAtPath:resourcePath toPath:txtPath error:&error];
+     }
+     If you want to overwrite every time then try this:
+     
+     if ([fileManager fileExistsAtPath:txtPath] == YES) {
+     [fileManager removeItemAtPath:txtPath error:&error];
+     }
+     
+     NSString *resourcePath = [[NSBundle mainBundle] pathForResource:@"txtFile" ofType:@"txt"];
+     [fileManager copyItemAtPath:resourcePath toPath:txtPath error:&error];
+     
+     
+     
+     */
+    
+    /////////////////////
    [contentArray writeToFile:NewPListPath atomically:YES];
 }
 
@@ -59,14 +105,9 @@
     
     Found = [contentArray containsObject: _Entry.text];
     
-    NSUInteger indexOfTheObject = [contentArray indexOfObject: _Entry.text ];
+    //NSUInteger indexOfTheObject = [contentArray indexOfObject: _Entry.text ];
     
-    
-   // NSLog(@"%@",Object);
-    
-    // [self.navigationController pushViewController:secondViewController animated:YES]
 
-    
 }
 
 
@@ -83,24 +124,15 @@
     
     
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"TestPList" ofType:@"plist"];
+    //NSString *path = [[NSBundle mainBundle] pathForResource:@"TestPList" ofType:@"plist"];
     
     NSString *AddedElement = _Entry.text;
     
     [contentArray addObject:AddedElement];
     
-  //  NSString *SavePath = @"/Users/Ragab/Library/Application Support/iPhone Simulator/7.0/Applications/E2DC8935-DDD4-4233-94D8-66F1384DDF5B/TryvinTrial2.app/TestPList.plist
     
     bool saved = [contentArray writeToFile:NewPListPath atomically:YES];
     
-    //    NSString *Test = [favs objectForKey:@"Root"];
-    
-    //[Resepies addObject:addYourObjectHere];
-    
-    // Build the array from the plist  ------>>>
-    
-    // NSDictionary *favs = [[NSMutableDictionary alloc] initWithContentsOfFile: path];
-    //    Resepies = [favs objectForKey:@"Root"];
     FirstTime = false;
     
 }
@@ -118,7 +150,7 @@
     
     
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"TestPList" ofType:@"plist"];
+    //NSString *path = [[NSBundle mainBundle] pathForResource:@"TestPList" ofType:@"plist"];
     
     NSString *ElementToDelete = _Entry.text;
     

@@ -66,7 +66,7 @@
 
 -(IBAction)OnClick_btnBack:(id)sender  {
     [self.navigationController popViewControllerAnimated:YES];
-    //[self.navigationController pushViewController:self.navigationController.parentViewController animated:YES];
+
 }
 /*
  #pragma mark - Navigation
