@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1914F4CB19ACD729000F82BB /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914F4CA19ACD729000F82BB /* ResultViewController.m */; };
+		1914F4CC19ACD729000F82BB /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1914F4CA19ACD729000F82BB /* ResultViewController.m */; };
+		1914F4CE19ACD9DB000F82BB /* TestPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1914F4CD19ACD9DB000F82BB /* TestPList.plist */; };
+		1914F4CF19ACD9DB000F82BB /* TestPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1914F4CD19ACD9DB000F82BB /* TestPList.plist */; };
+		1914F4D119ACDC29000F82BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1914F4D019ACDC29000F82BB /* Main.storyboard */; };
+		1914F4D219ACDC29000F82BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1914F4D019ACDC29000F82BB /* Main.storyboard */; };
+		19DC286B19A63D440066E674 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DC286A19A63D440066E674 /* Foundation.framework */; };
+		19DC286D19A63D440066E674 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DC286C19A63D440066E674 /* CoreGraphics.framework */; };
+		19DC286F19A63D440066E674 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DC286E19A63D440066E674 /* UIKit.framework */; };
+		19DC287519A63D440066E674 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19DC287319A63D440066E674 /* InfoPlist.strings */; };
+		19DC287719A63D440066E674 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC287619A63D440066E674 /* main.m */; };
+		19DC287B19A63D440066E674 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC287A19A63D440066E674 /* AppDelegate.m */; };
+		19DC288119A63D440066E674 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC288019A63D440066E674 /* ViewController.m */; };
+		19DC288319A63D440066E674 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DC288219A63D440066E674 /* Images.xcassets */; };
+		19DC288A19A63D450066E674 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DC288919A63D440066E674 /* XCTest.framework */; };
+		19DC288B19A63D450066E674 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DC286A19A63D440066E674 /* Foundation.framework */; };
+		19DC288C19A63D450066E674 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DC286E19A63D440066E674 /* UIKit.framework */; };
+		19DC289419A63D450066E674 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 19DC289219A63D450066E674 /* InfoPlist.strings */; };
+		19DC289619A63D450066E674 /* TryvinTrial2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DC289519A63D450066E674 /* TryvinTrial2Tests.m */; };
+		229F2E5BE2BC42CCABC4DB00 /* libPods-TryvinTrial2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A3B1AAEF4048D38B7E035D /* libPods-TryvinTrial2Tests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19DC288D19A63D450066E674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19DC285F19A63D440066E674 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19DC286619A63D440066E674;
+			remoteInfo = TryvinTrial2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1914F4C919ACD729000F82BB /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		1914F4CA19ACD729000F82BB /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		1914F4CD19ACD9DB000F82BB /* TestPList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestPList.plist; sourceTree = "<group>"; };
+		1914F4D019ACDC29000F82BB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		19DC286719A63D440066E674 /* TryvinTrial2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TryvinTrial2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DC286A19A63D440066E674 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19DC286C19A63D440066E674 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		19DC286E19A63D440066E674 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		19DC287219A63D440066E674 /* TryvinTrial2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TryvinTrial2-Info.plist"; sourceTree = "<group>"; };
+		19DC287419A63D440066E674 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19DC287619A63D440066E674 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		19DC287819A63D440066E674 /* TryvinTrial2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TryvinTrial2-Prefix.pch"; sourceTree = "<group>"; };
+		19DC287919A63D440066E674 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		19DC287A19A63D440066E674 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		19DC287F19A63D440066E674 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		19DC288019A63D440066E674 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		19DC288219A63D440066E674 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		19DC288819A63D440066E674 /* TryvinTrial2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TryvinTrial2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		19DC288919A63D440066E674 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		19DC289119A63D450066E674 /* TryvinTrial2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TryvinTrial2Tests-Info.plist"; sourceTree = "<group>"; };
+		19DC289319A63D450066E674 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19DC289519A63D450066E674 /* TryvinTrial2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TryvinTrial2Tests.m; sourceTree = "<group>"; };
+		51A3B1AAEF4048D38B7E035D /* libPods-TryvinTrial2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TryvinTrial2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD622653214448099C3F0EE /* Pods-TryvinTrial2Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TryvinTrial2Tests.xcconfig"; path = "Pods/Pods-TryvinTrial2Tests.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		19DC286419A63D440066E674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DC286D19A63D440066E674 /* CoreGraphics.framework in Frameworks */,
+				19DC286F19A63D440066E674 /* UIKit.framework in Frameworks */,
+				19DC286B19A63D440066E674 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DC288519A63D440066E674 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DC288A19A63D450066E674 /* XCTest.framework in Frameworks */,
+				19DC288C19A63D450066E674 /* UIKit.framework in Frameworks */,
+				19DC288B19A63D450066E674 /* Foundation.framework in Frameworks */,
+				229F2E5BE2BC42CCABC4DB00 /* libPods-TryvinTrial2Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19DC285E19A63D440066E674 = {
+			isa = PBXGroup;
+			children = (
+				19DC287019A63D440066E674 /* TryvinTrial2 */,
+				19DC288F19A63D450066E674 /* TryvinTrial2Tests */,
+				19DC286919A63D440066E674 /* Frameworks */,
+				19DC286819A63D440066E674 /* Products */,
+				7BD622653214448099C3F0EE /* Pods-TryvinTrial2Tests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		19DC286819A63D440066E674 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19DC286719A63D440066E674 /* TryvinTrial2.app */,
+				19DC288819A63D440066E674 /* TryvinTrial2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19DC286919A63D440066E674 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19DC286A19A63D440066E674 /* Foundation.framework */,
+				19DC286C19A63D440066E674 /* CoreGraphics.framework */,
+				19DC286E19A63D440066E674 /* UIKit.framework */,
+				19DC288919A63D440066E674 /* XCTest.framework */,
+				51A3B1AAEF4048D38B7E035D /* libPods-TryvinTrial2Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19DC287019A63D440066E674 /* TryvinTrial2 */ = {
+			isa = PBXGroup;
+			children = (
+				19DC287919A63D440066E674 /* AppDelegate.h */,
+				19DC287A19A63D440066E674 /* AppDelegate.m */,
+				1914F4D019ACDC29000F82BB /* Main.storyboard */,
+				19DC287F19A63D440066E674 /* ViewController.h */,
+				19DC288019A63D440066E674 /* ViewController.m */,
+				1914F4C919ACD729000F82BB /* ResultViewController.h */,
+				1914F4CA19ACD729000F82BB /* ResultViewController.m */,
+				1914F4CD19ACD9DB000F82BB /* TestPList.plist */,
+				19DC288219A63D440066E674 /* Images.xcassets */,
+				19DC287119A63D440066E674 /* Supporting Files */,
+			);
+			path = TryvinTrial2;
+			sourceTree = "<group>";
+		};
+		19DC287119A63D440066E674 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19DC287219A63D440066E674 /* TryvinTrial2-Info.plist */,
+				19DC287319A63D440066E674 /* InfoPlist.strings */,
+				19DC287619A63D440066E674 /* main.m */,
+				19DC287819A63D440066E674 /* TryvinTrial2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19DC288F19A63D450066E674 /* TryvinTrial2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				19DC289519A63D450066E674 /* TryvinTrial2Tests.m */,
+				19DC289019A63D450066E674 /* Supporting Files */,
+			);
+			path = TryvinTrial2Tests;
+			sourceTree = "<group>";
+		};
+		19DC289019A63D450066E674 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19DC289119A63D450066E674 /* TryvinTrial2Tests-Info.plist */,
+				19DC289219A63D450066E674 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19DC286619A63D440066E674 /* TryvinTrial2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DC289919A63D450066E674 /* Build configuration list for PBXNativeTarget "TryvinTrial2" */;
+			buildPhases = (
+				19DC286319A63D440066E674 /* Sources */,
+				19DC286419A63D440066E674 /* Frameworks */,
+				19DC286519A63D440066E674 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TryvinTrial2;
+			productName = TryvinTrial2;
+			productReference = 19DC286719A63D440066E674 /* TryvinTrial2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		19DC288719A63D440066E674 /* TryvinTrial2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19DC289C19A63D450066E674 /* Build configuration list for PBXNativeTarget "TryvinTrial2Tests" */;
+			buildPhases = (
+				964797EDDA5D411E8EF45682 /* Check Pods Manifest.lock */,
+				19DC288419A63D440066E674 /* Sources */,
+				19DC288519A63D440066E674 /* Frameworks */,
+				19DC288619A63D440066E674 /* Resources */,
+				1A0EFEDA392D41AF986C835F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19DC288E19A63D450066E674 /* PBXTargetDependency */,
+			);
+			name = TryvinTrial2Tests;
+			productName = TryvinTrial2Tests;
+			productReference = 19DC288819A63D440066E674 /* TryvinTrial2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19DC285F19A63D440066E674 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = OS;
+				TargetAttributes = {
+					19DC288719A63D440066E674 = {
+						TestTargetID = 19DC286619A63D440066E674;
+					};
+				};
+			};
+			buildConfigurationList = 19DC286219A63D440066E674 /* Build configuration list for PBXProject "TryvinTrial2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 19DC285E19A63D440066E674;
+			productRefGroup = 19DC286819A63D440066E674 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19DC286619A63D440066E674 /* TryvinTrial2 */,
+				19DC288719A63D440066E674 /* TryvinTrial2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		19DC286519A63D440066E674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1914F4CE19ACD9DB000F82BB /* TestPList.plist in Resources */,
+				19DC288319A63D440066E674 /* Images.xcassets in Resources */,
+				1914F4D119ACDC29000F82BB /* Main.storyboard in Resources */,
+				19DC287519A63D440066E674 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DC288619A63D440066E674 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1914F4D219ACDC29000F82BB /* Main.storyboard in Resources */,
+				19DC289419A63D450066E674 /* InfoPlist.strings in Resources */,
+				1914F4CF19ACD9DB000F82BB /* TestPList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0EFEDA392D41AF986C835F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TryvinTrial2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		964797EDDA5D411E8EF45682 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19DC286319A63D440066E674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DC288119A63D440066E674 /* ViewController.m in Sources */,
+				19DC287B19A63D440066E674 /* AppDelegate.m in Sources */,
+				19DC287719A63D440066E674 /* main.m in Sources */,
+				1914F4CB19ACD729000F82BB /* ResultViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DC288419A63D440066E674 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DC289619A63D450066E674 /* TryvinTrial2Tests.m in Sources */,
+				1914F4CC19ACD729000F82BB /* ResultViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19DC288E19A63D450066E674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19DC286619A63D440066E674 /* TryvinTrial2 */;
+			targetProxy = 19DC288D19A63D450066E674 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		19DC287319A63D440066E674 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19DC287419A63D440066E674 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		19DC289219A63D450066E674 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19DC289319A63D450066E674 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		19DC289719A63D450066E674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19DC289819A63D450066E674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19DC289A19A63D450066E674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TryvinTrial2/TryvinTrial2-Prefix.pch";
+				INFOPLIST_FILE = "TryvinTrial2/TryvinTrial2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		19DC289B19A63D450066E674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TryvinTrial2/TryvinTrial2-Prefix.pch";
+				INFOPLIST_FILE = "TryvinTrial2/TryvinTrial2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		19DC289D19A63D450066E674 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD622653214448099C3F0EE /* Pods-TryvinTrial2Tests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TryvinTrial2.app/TryvinTrial2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TryvinTrial2/TryvinTrial2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TryvinTrial2Tests/TryvinTrial2Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		19DC289E19A63D450066E674 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD622653214448099C3F0EE /* Pods-TryvinTrial2Tests.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TryvinTrial2.app/TryvinTrial2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TryvinTrial2/TryvinTrial2-Prefix.pch";
+				INFOPLIST_FILE = "TryvinTrial2Tests/TryvinTrial2Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19DC286219A63D440066E674 /* Build configuration list for PBXProject "TryvinTrial2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DC289719A63D450066E674 /* Debug */,
+				19DC289819A63D450066E674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19DC289919A63D450066E674 /* Build configuration list for PBXNativeTarget "TryvinTrial2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DC289A19A63D450066E674 /* Debug */,
+				19DC289B19A63D450066E674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19DC289C19A63D450066E674 /* Build configuration list for PBXNativeTarget "TryvinTrial2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DC289D19A63D450066E674 /* Debug */,
+				19DC289E19A63D450066E674 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19DC285F19A63D440066E674 /* Project object */;
+}
