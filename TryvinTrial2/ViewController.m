@@ -3,7 +3,7 @@
 //  TestingKIF
 //
 //  Created by Youssef Hatem on 8/25/14.
-//  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
+//  Copyright (c) 2014 Tryvin. All rights reserved.
 //
 
 #import "ViewController.h"
