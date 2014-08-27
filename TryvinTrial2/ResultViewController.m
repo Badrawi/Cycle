@@ -33,7 +33,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.navigationItem.backBarButtonItem setAccessibilityLabel:@"BackButton"] ;
+   // [self.navigationItem.backBarButtonItem setAccessibilityLabel:@"BackButton"] ;
     
     [self.Result setText:self.ResultHolder];
 }
