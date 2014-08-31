@@ -468,6 +468,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "TryvinTrial2Tests/TryvinTrial2Tests-Info.plist";
+				MACH_O_TYPE = mh_bundle;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
@@ -496,6 +497,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TryvinTrial2/TryvinTrial2-Prefix.pch";
 				INFOPLIST_FILE = "TryvinTrial2Tests/TryvinTrial2Tests-Info.plist";
+				MACH_O_TYPE = mh_bundle;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
